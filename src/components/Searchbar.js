@@ -1,4 +1,5 @@
 import React from "react";
+import './Searchbar.css';
 
 class Searchbar extends React.Component {
     state = { term: "" };
@@ -11,7 +12,7 @@ class Searchbar extends React.Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit}>
-        <div className="ui loading search">
+        <div className="ui category search" style={{ marginTop: '15px '}} >
           <div className="ui icon input">
             <input
               className="prompt"
